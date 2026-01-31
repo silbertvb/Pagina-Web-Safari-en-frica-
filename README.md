@@ -7,7 +7,7 @@ Consiste en una landing page temática sobre un **safari en África**, con naveg
 
 ## 🖼️ Vista previa
 
-![Vista previa de la web](./img/preview.jpg)
+![Vista previa de la web](./assets/preview.jpg)
 
 ---
 
