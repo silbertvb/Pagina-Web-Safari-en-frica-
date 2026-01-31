@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Indica que el documento usa HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz del documento, idioma español -->
+
+<head>
+    <!-- Contiene información no visible de la página -->
+
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres (acentos, ñ, etc.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la web sea responsive en móviles -->
+
+    <title>Safari en África</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Descubre la experiencia única de un safari en África">
+    <!-- Descripción para SEO y buscadores -->
+
+</head>
+
+<body>
+    <!-- Contiene todo el contenido visible de la web -->
+
+    <header>
+        <!-- Encabezado principal de la página -->
+        <video autoplay muted loop playsinline>
+            <source src="video/AdobeExpress_Montaje2.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="header-content">
+            <h1>Safari en África</h1>
+            <!-- Título principal -->
+
+            <p>Una aventura salvaje e inolvidable</p>
+            <!-- Texto descriptivo -->
+        </div>
+    </header>
+
+    <nav>
+        <!-- Menú de navegación -->
+
+        <a href="#destinos">Destinos</a> |
+        <!-- Enlace a la sección destinos -->
+
+        <a href="#galeria">Galería</a> |
+        <!-- Enlace a la galería -->
+
+        <a href="#contacto">Contacto</a>
+        <!-- Enlace a la sección contacto -->
+    </nav>
+
+    <main>
+        <!-- Contenido principal de la página -->
+
+        <section id="destinos">
+            <!-- Sección de destinos -->
+
+            <h2>Destinos</h2>
+            <!-- Título de la sección -->
+
+            <p>
+                Un safari en África te permite observar animales en su hábitat natural, recorrer parques nacionales y
+                vivir la naturaleza de cerca en su estado más salvaje.
+                Elige tu destino y prepárate para una aventura inolvidable.
+            </p>
+            <br>
+            <h3>🏆 Los más populares</h3>
+            <br>
+            <br>
+            <div class="destinos-container">
+                <label class="pais1">
+                    <input type="radio" name="pais">
+                    <span class="kenia">🥇Kenia</span>
+                    <img src="img/Kenia_elefante.jpg" alt="Elefante en Kenia">
+                </label><br>
+
+                <label class="pais2">
+                    <input type="radio" name="pais" value="tanzania">
+                    <span class="tanzania">🥈Tanzania</span>
+                    <img src="img/Tanzania_zebras.jpg" alt="Zebras de Tanzania">
+                </label><br>
+
+                <label class="pais3">
+                    <input type="radio" name="pais" value="sudafrica">
+                    <span class="sudafrica">🥉Sudafrica</span>
+                    <img src="img/Sudafrica_rinho.jpg" alt="Rinoceronte de Sudáfrica">
+                </label>
+            </div>
+        </section>
+
+        <section id="países">
+            <!-- Sección experiencia -->
+            <br>
+            <h3>🎯Elige el país</h3>
+
+            <div>
+                <label for="africa"><strong>Países de África</strong></label>
+                <select id="africa" name="africa">
+                    <option value="kenia">Kenia</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="sudafrica">Sudáfrica</option>
+                    <option value="botswana">Ghana</option>
+                    <option value="namibia">Senegal</option>
+                </select>
+            </div>
+
+
+        </section>
+        <br>
+        <br>
+        <section id="galeria">
+            <!-- Sección galería -->
+
+            <h2>Galería</h2>
+
+            <p>Sumérgete en imágenes reales de animales en su hábitat natural, capturados en libertad y en equilibrio
+                con la naturaleza. Un recorrido visual que muestra la belleza, diversidad y comportamiento auténtico de
+                la fauna salvaje.</p>
+            <br>
+            <video controls width="600" height="400">
+                <!-- Video con controles -->
+
+                <source src="video/DaVincciResolve_Montaje1.mp4" type="video/mp4">
+                <!-- Archivo de video -->
+
+                Tu navegador no soporta video.
+                <!-- Mensaje de respaldo -->
+            </video>
+
+        </section>
+
+        <section id="contacto"><br><br>
+            <!-- Sección de contacto -->
+
+            <h2>Contacto</h2><br>
+
+            <form>
+                <!-- Formulario -->
+
+                <label>Nombre y Apellidos:</label>
+                <input type="text" placeholder="Escribe tu nombre completo"><br><br>
+                <!-- Campo de texto -->
+
+                <label>Email:</label>
+                <input type="email" placeholder="ejemplo@gmail.com"><br><br>
+                <!-- Campo email -->
+
+                <label>Mensaje:</label>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." maxlength="300"></textarea><br>
+                <!-- Campo email -->
+
+                <button type="submit">Enviar</button>
+                <!-- Botón de envío -->
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>© 2026 Safari en África</p>
+    </footer>
+
+</body>
+
+</html>

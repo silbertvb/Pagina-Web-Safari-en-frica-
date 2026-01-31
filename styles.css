@@ -1,0 +1,240 @@
+/* ===== RESET BÁSICO ===== */
+/* Elimina márgenes y rellenos por defecto del navegador */
+* {
+  margin: 0;                 /* Quita el margen por defecto */
+  padding: 0;                /* Quita el relleno por defecto */
+  box-sizing: border-box;    /* Incluye padding y border en el tamaño total */
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Tipografía principal */
+  line-height: 1.6;                          /* Altura de línea para mejor lectura */
+  background-color: #b69987;                 /* Color de fondo general */
+  color: black;                               /* Color del texto */
+}
+
+/* ===== HEADER CON VIDEO ===== */
+header {
+  position: relative;    /* Permite posicionar elementos hijos (video, texto) */
+  height: 92vh;          /* Altura del header (60% de la pantalla) */
+  overflow: hidden;      /* Oculta lo que se salga del header */
+  color: white;          /* Color del texto */
+}
+
+/* ===== VIDEO DE FONDO ===== */
+header video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== CONTENIDO SOBRE EL VIDEO ===== */
+.header-content {
+  position: relative;                     /* Mantiene el contenido visible */
+  height: 100%;                           /* Ocupa todo el header */
+  background: rgba(0, 0, 0, 0.45);        /* Capa oscura para mejorar contraste */
+  display: flex;                          /* Activa Flexbox */
+  flex-direction: column;                 /* Elementos en columna */
+  justify-content: center;                /* Centra verticalmente */
+  align-items: center;                    /* Centra horizontalmente */
+  text-align: center;                     /* Texto centrado */
+  padding: 20px;                          /* Espaciado interno */
+  z-index: 1;                             /* Trae el contenido al frente */
+}
+
+/* Título principal */
+.header-content h1 {
+  padding: 10px;
+  font-size: 5rem;        /* Tamaño grande para el título */
+  margin-bottom: 10px;    /* Espacio inferior */
+}
+
+/* Subtítulo */
+.header-content p {
+  font-size: 1.6rem;      /* Tamaño del texto descriptivo */
+  
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+  background: #2e7d32;    /* Color verde safari */
+  padding: 10px;          /* Espaciado interno */
+  text-align: center;     /* Centra los enlaces */
+}
+
+/* Enlaces del menú */
+nav a {
+  color: white;           /* Texto blanco */
+  text-decoration: none;  /* Quita subrayado */
+  margin: 0 10px;         /* Separación entre enlaces */
+  font-weight: bold;      /* Texto en negrita */
+}
+
+/* Efecto al pasar el mouse */
+nav a:hover {
+  text-decoration: underline; /* Subraya al pasar el cursor */
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+  max-width: 900px;       /* Ancho máximo del contenido */
+  margin: 30px auto;     /* Centra el contenido horizontalmente */
+  padding: 0 20px;       /* Espacio lateral */
+}
+
+/* Secciones */
+section {
+  margin-bottom: 40px;   /* Separación entre secciones */
+}
+
+/* Títulos de sección */
+h2, h3 {
+  color: #2e7d32;        /* Color verde */
+  margin-bottom: 10px;  /* Espacio inferior */
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 15px;   /* Espacio inferior en párrafos */
+  font-size: 1.3rem;       /* Tamaño de fuente estándar */
+}
+
+.destinos-container {
+  display: flex;          /* Usa Flexbox para alinear los países */
+  gap: 15px;              /* Espacio entre cada país */
+  flex-wrap: wrap;        /* Permite que los elementos se envuelvan en varias filas */
+  justify-content: center; /* Centra los países horizontalmente */
+}
+
+.pais1, .pais2, .pais3 {
+  position: relative;    /* Permite posicionar el nombre sobre la imagen */
+  width: 200px;          /* Ancho fijo para cada país */
+  height: 150px;
+  cursor: pointer;       /* Cambia el cursor al pasar por encima */
+}
+
+/* Imagen responsive */
+.pais img {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;     /* Ajusta la imagen sin deformarla */
+}
+
+/* Nombre sobre la imagen */
+.pais-nombre {
+  position: absolute;      /* Se coloca sobre la imagen */
+  bottom: 8px;             /* Posición inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6); /* Fondo oscuro */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Responsive automático */
+
+
+#destinos img {
+  width: 200px;        /* Cambia este valor al tamaño que quieras */
+  height: 130px;       /* Mantiene proporción */
+  margin-right: 1px;  /* Espacio entre imagen y texto */
+  vertical-align: middle;
+}
+
+
+
+/* ===== FORMULARIOS ===== */
+form label {
+  display: block;        /* Cada etiqueta ocupa una línea */
+  margin: 4px 0;         /* Espacio entre etiquetas */
+  cursor: pointer;       /* Cambia el cursor al pasar */
+  font-size: 0.95rem;
+}
+
+/* Campos de texto y email */
+input[type="text"],
+input[type="email"] {
+  width: 100%;           /* Ocupan todo el ancho disponible */
+  padding: 6px;          /* Espaciado interno */
+  margin-bottom: 10px;       /* Espacio superior */
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  font-size: inherit;
+  font-size: 1rem;
+  resize: none;       /*no permite que el usuario cambie el tamaño */
+}
+
+/* Botón */
+button {
+  background: #1b5e20;   /* Fondo verde */
+  color: white;          /* Texto blanco */
+  border: none;          /* Sin borde */
+  padding: 10px 20px;    /* Tamaño del botón */
+  cursor: pointer;       /* Cursor tipo mano */
+}
+
+/* Hover del botón */
+button:hover {
+  background: #109519;   /* Verde más oscuro */
+}
+
+/* ===== VIDEO EN GALERÍA ===== */
+#galeria video {
+  width: 100%;           /* Ocupa todo el ancho del contenedor */
+  max-width: 600px;      /* Ancho máximo */
+  height: auto;          /* Altura automática para mantener proporción */
+  margin-bottom: 20px;   /* Espacio inferior */
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #333333;
+  color: white;
+  display: flex;
+  align-items: center;      /* centra en vertical */
+  justify-content: center;  /* centra en horizontal */
+  padding: 2px 6px;         /* Espaciado interno */
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 0.9rem;
+  } /* Ajusta tamaño de enlaces en móvil */
+
+  main {
+    margin: 20px auto;
+    padding: 0 10px;
+  } /* Ajusta márgenes y padding */
+
+  .destinos-container {
+    flex-direction: column;
+    align-items: center;
+  } /* Apila los países en móvil */
+
+  #destinos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  } /* Imagenes responsivas en móvil */
+
+  galeria-video {
+    max-width: 100%;
+  } /* Videos responsivos en móvil */
+}
