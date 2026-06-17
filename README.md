@@ -5,12 +5,6 @@ Consiste en una landing page temática sobre un **Gestor de viajes en países de
 
 ---
 
-## 🖼️ Vista previa
-
-![Vista previa de la web](assets/preview.JPG)
-
----
-
 ## ✨ Características principales
 
 - 🎥 **Vídeo fijo en la cabecera** (hero) con reproducción automática e infinita (loop)
