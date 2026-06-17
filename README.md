@@ -1,8 +1,7 @@
 # 🌍 Página Web: Safari en África
 
-https://silbertvb.github.io/Pagina-Web-Safari-en-frica-/
-Proyecto web desarrollado como práctica de **Diseño de Interfaces (2º DAW)**.  
-Consiste en una landing page temática sobre un **safari en África**, con navegación por secciones, contenido multimedia y enfoque en la **optimización de vídeo**.
+[Safari en África](https://silbertvb.github.io/Pagina-Web-Safari-en-frica-/)
+Consiste en una landing page temática sobre un **Gestor de viajes en países de África**, con navegación por secciones, contenido multimedia y enfoque en la **optimización de vídeo**.
 
 ---
 
